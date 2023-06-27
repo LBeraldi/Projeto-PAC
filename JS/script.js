@@ -1,5 +1,7 @@
-const cbx = documen.getElementById('cbx');
+document.addEventListener('DOMContentLoaded', function() {
 
-cbx.addEventListener('change', () => {
-  document.body.classList.add('dark');
+  const cbx = document.getElementById('cbx');
+  cbx.addEventListener('change', function() {
+    document.body.classList.toggle('dark')
+  });
 });
