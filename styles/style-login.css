@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+  --bg-color: #f1f1f1;
+  --conteiner-color: #dbdbdb;
+  --font-color: #1f1f1f;
+  --footer-color: $gray-600;
+  --font-family-rb: "Roboto", sans-serif;
+  --font-family-ms: "Montserrat", sans-serif;
+  --bnt-color: #3b86a4;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+      --bg-color: #1e242c;
+      --conteiner-color: #2a3b42;
+      --font-color: #f1f1f1;
+      --bnt-color: #465B78;
+      --footer-color: $gray-900;
+    }
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--bg-color);
+}
+
+fieldset{
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+
+form{ 
+    padding: 1.5rem;
+    width: 25vw;
+    height: auto;
+    background-color: var(--conteiner-color);
+    border-left: 6px solid var(--bnt-color);
+}
+
+legend{
+    text-align: left;
+    padding: 1.4rem 0;
+    margin-bottom: 1.8rem;
+    font-family: var(--font-family-ms);
+    font-weight: 100;
+    font-size: 1.7rem;
+    color: var(--font-color);
+    
+}
+
+.titulo{
+    margin-bottom: .5rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-family: var(--font-family-rb);
+    font-weight: 400;
+    color: var(--font-color);
+}
+
+.entrada{
+    padding: .7rem;
+    font-size: 1.2rem;
+    border: none;
+    border-bottom: 1px solid #95a5a6;
+    margin-bottom: 1.3rem;
+    outline: none;
+    transition: padding-left .1s;
+}
+
+.entrada:focus{
+    outline: 2px solid var(--color-geral);
+    padding-left: 1rem;
+}
+
+.botoes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.btn{
+    color: #fff;
+    padding: .7rem;
+    border: none;
+    background-color: var(--bnt-color);
+    border-radius: 2px;
+
+    font-family: var(--font-family-rb);
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.btn-login{
+    color: #fff;
+    padding: .7rem 1.5rem;
+    border: none;
+    background-color: var(--bnt-color);
+    border-radius: 4px;
+
+    font-family: var(--font-family-rb);
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.botoes p{
+    font-size: .8rem;
+    font-family: var(--font-family-rb);
+    color: var(--font-color);
+}
+
+.login{
+    align-items: center;
+}
+
+.cadastre-se{
+    text-decoration: none;
+    color: var(--font-color);
+    font-family: var(--font-family-rb);
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-left: -2rem 2rem;
+}
+
+.esqueci-senha{
+    text-decoration: none;
+    font-size: .8rem;
+}
