@@ -16,8 +16,7 @@ Este programa foi criado para ajudar na organização e controle de planilhas we
 
 1. Clone o repositório para o seu computador:
    ```sh
-   git clone https://github.com/seu-usuario/auto-controle-planilhas-web.git
-
+   git clone https://github.com/LBeraldi/Projeto-PAC.git
 # Projeto aplicativo.
 
 ## Principais tecnologias para criação do app.
